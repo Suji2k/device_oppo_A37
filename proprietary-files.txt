@@ -228,6 +228,12 @@ vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxMux.so
 vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxAlacDec.so
+vendor/lib/libOmxAlacDecSw.so
+vendor/lib/libOmxAmrwbplusDec.so
+vendor/lib/libOmxApeDec.so
+vendor/lib/libOmxApeDecSw.so
+vendor/lib/libOmxWmaDec.so
 
 # Perf - from jalebi
 vendor/bin/perfd|5e31de336247378b0674b4d65494567ab76c190c

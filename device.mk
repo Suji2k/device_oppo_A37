@@ -301,18 +301,21 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libextmedia_jni \
+# Media
+PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
-    libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
+    libOmxVdecHevc \
+    libOmxSwVencHevc \
     libOmxVenc \
+    libOmxVidcCommon \
     libstagefrighthw
+
     
 # Media-Prop
 PRODUCT_PROPERTY_OVERRIDES += \
