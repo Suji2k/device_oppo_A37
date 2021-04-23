@@ -255,7 +255,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1 \
     vendor.qcom.bluetooth.soc=pronto \
     ro.bluetooth.hfp.ver=1.6 \
-    ro.qualcomm.bt.hci_transport=smd \
+    ro.qualcomm.bt.hci_transport=pronto \
     ro.bluetooth.dun=true \
     ro.bluetooth.sap=true 
 
@@ -467,9 +467,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.ecc_hard_1=112,911,110,122,119,120,000,118 \
     persist.radio.ecc_hard_count=1 \
     rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so \
-    ril.subscription.types=RUIM \
+    ril.subscription.types=NV,RUIM \
     telephony.lteOnCdmaDevice=1
-    
+
+# NITZ
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rild.nitz_plmn="" \
+    persist.rild.nitz_long_ons_0="" \
+    persist.rild.nitz_long_ons_1="" \
+    persist.rild.nitz_long_ons_2="" \
+    persist.rild.nitz_long_ons_3="" \
+    persist.rild.nitz_short_ons_0="" \
+    persist.rild.nitz_short_ons_1="" \
+    persist.rild.nitz_short_ons_2="" \
+    persist.rild.nitz_short_ons_3=""
+  
 # Volte
 PRODUCT_PROPERTY_OVERRIDES += \
      persist.dbg.ims_volte_enable=1 \
