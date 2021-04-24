@@ -90,6 +90,10 @@ on boot
     chown bluetooth bluetooth /dev/ttyHS0
     chmod 0660 /dev/ttyHS0
 
+    # charging_enable
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chmod 0664 /sys/class/power_supply/battery/charging_enabled
+
     # Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 2770 radio radio
     mkdir /dev/socket/qmux_audio 2770 media audio

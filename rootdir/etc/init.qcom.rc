@@ -66,9 +66,6 @@ service imsdatadaemon /system/vendor/bin/imsdatadaemon
      group system wifi radio inet net_raw log diag net_admin oem_2950
     writepid /dev/cpuset/system-background/tasks
     disabled
-
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chmod 0664 /sys/class/power_supply/battery/charging_enabled
   
 service vm_bms /system/vendor/bin/vm_bms
     class core
